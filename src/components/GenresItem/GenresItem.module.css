@@ -1,0 +1,9 @@
+.item {
+  color: #0000;
+  padding: 10px;
+  background-color: #ffff;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+}

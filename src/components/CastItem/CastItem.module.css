@@ -1,0 +1,19 @@
+.thumb {
+  max-width: 256px;
+  height: 344px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.character {
+  color: rgba(218, 209, 209, 0.98);
+  font-size: 18px;
+  max-width: 179px;
+  overflow: hidden;
+  display: -webkit-box;
+
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  height: 24px;
+}

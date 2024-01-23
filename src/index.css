@@ -45,3 +45,53 @@ img {
   max-width: 100%;
   height: auto;
 }
+.active {
+  color: #ffffff;
+  background: linear-gradient(-45deg, #ee8362, #d13772, #1e90ba, #1eaf8d);
+  background-clip: text;
+  background-size: 400%;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  animation: gradient 7s ease infinite;
+}
+.active::before {
+  content: ' ';
+  display: block;
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(-45deg, #ee8362, #d13772, #1e90ba, #1eaf8d);
+  border-radius: 10px;
+  background-size: 400%;
+  animation: gradient 7s ease infinite;
+}
+a {
+  color: inherit;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
