@@ -1,3 +1,4 @@
+import React from 'react';
 import StyledContainer from '../StyledContainer/StyledContainer';
 import { Suspense } from 'react';
 import Header from 'components/Header/Header';

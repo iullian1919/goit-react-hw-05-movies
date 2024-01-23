@@ -1,3 +1,4 @@
+import React from 'react';
 import BackDrop from '../Backdrop';
 import { InfinitySpin } from 'react-loader-spinner';
 

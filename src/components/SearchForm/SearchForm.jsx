@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import { StyledForm, StyledInput, StyledSearchBtn } from './SearchForm.styled';
 import { FaSearch } from 'react-icons/fa';
 
@@ -25,6 +27,10 @@ const SearchForm = ({ setSearch }) => {
       </StyledSearchBtn>
     </StyledForm>
   );
+};
+
+SearchForm.propTypes = {
+  setSearch: PropTypes.func.isRequired,
 };
 
 export default SearchForm;

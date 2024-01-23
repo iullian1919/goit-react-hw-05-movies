@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import css from './CastItem.module.css';
 
 const CastItem = ({ cast }) => {
@@ -25,6 +27,14 @@ const CastItem = ({ cast }) => {
       </h3>
     </li>
   );
+};
+
+CastItem.propTypes = {
+  cast: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    character: PropTypes.string.isRequired,
+    profile_path: PropTypes.string,
+  }).isRequired,
 };
 
 export default CastItem;

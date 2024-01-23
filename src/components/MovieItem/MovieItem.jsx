@@ -1,3 +1,5 @@
+import React from 'react';
+import PropTypes from 'prop-types'; // Adăugați această linie
 import MovieItemStyled from './MovieItem.styled';
 import css from './style.module.css';
 import { IoMdStarOutline } from 'react-icons/io';
@@ -39,4 +41,14 @@ function MovieItem({ movie }) {
     </li>
   );
 }
+
+MovieItem.propTypes = {
+  movie: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    poster_path: PropTypes.string,
+    vote_average: PropTypes.number.isRequired,
+  }).isRequired,
+};
+
 export default MovieItem;

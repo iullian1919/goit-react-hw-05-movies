@@ -1,4 +1,6 @@
+import React from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import css from './MovieDetailsItem.module.css';
 import { MdDateRange } from 'react-icons/md';
 import { WiTime3 } from 'react-icons/wi';
@@ -108,6 +110,34 @@ const MovieDetailsItem = ({ movieObj }) => {
       <Outlet />
     </div>
   );
+};
+
+MovieDetailsItem.propTypes = {
+  movieObj: PropTypes.shape({
+    original_title: PropTypes.string.isRequired,
+    overview: PropTypes.string.isRequired,
+    release_date: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+    genres: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    runtime: PropTypes.number.isRequired,
+    production_countries: PropTypes.arrayOf(
+      PropTypes.shape({
+        iso_3166_1: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    production_companies: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    poster_path: PropTypes.string.isRequired,
+    vote_average: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default MovieDetailsItem;

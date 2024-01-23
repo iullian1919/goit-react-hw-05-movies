@@ -1,3 +1,4 @@
+import React from 'react';
 import ReviewItem from '../ReviewItem';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
