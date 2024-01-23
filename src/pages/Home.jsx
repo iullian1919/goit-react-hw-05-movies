@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import getFilms from 'service/getFilmList';
 import css from './Home.module.css';
-import MovieList from 'components/MovieList/MovieList';
-import Loader from 'components/Loader/Loader';
+import MovieList from '../components/MovieList';
+import Loader from '../components/Loader';
 
 const Home = () => {
   const [films, setFilms] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import CastItem from 'components/CastItem/CastItem';
+import CastItem from '../CastItem';
 import { getCasts } from 'service/getFilmList';
 import css from './Cast.module.css';
 

@@ -1,7 +1,7 @@
 import StyledContainer from '../StyledContainer/StyledContainer';
 import { Suspense } from 'react';
 import Header from 'components/Header/Header';
-import Footer from 'components/Footer/Footer';
+import Footer from '../Footer';
 import { Outlet } from 'react-router-dom';
 
 const Layout = () => {

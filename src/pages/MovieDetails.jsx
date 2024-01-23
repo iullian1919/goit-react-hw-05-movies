@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { searchMovieById } from 'service/getFilmList';
-import MovieDetailsItem from 'components/MovieDetailsItem/MovieDetailsItem';
+import MovieDetailsItem from '../components/MovieDetailsItem';
 
 const MovieDetails = () => {
   const [movieItem, setMovieItem] = useState(null);

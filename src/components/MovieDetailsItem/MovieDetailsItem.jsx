@@ -2,9 +2,9 @@ import { Link, Outlet, useLocation } from 'react-router-dom';
 import css from './MovieDetailsItem.module.css';
 import { MdDateRange } from 'react-icons/md';
 import { WiTime3 } from 'react-icons/wi';
-import GenresItem from 'components/GenresItem/GenresItem';
+import GenresItem from '../GenresItem';
 import { IoMdStarOutline } from 'react-icons/io';
-import ButtonBack from 'components/ButtonBack/ButtonBack';
+import ButtonBack from '../ButtonBack';
 
 const MovieDetailsItem = ({ movieObj }) => {
   const {

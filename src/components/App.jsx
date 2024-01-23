@@ -2,9 +2,9 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 import { Suspense } from 'react';
-import Layout from './Layout/Layout';
-import Cast from './Cast/Cast';
-import Reviews from './Reviews/Reviews';
+import Layout from './Layout';
+import Cast from './Cast';
+import Reviews from './Reviews';
 
 const Home = lazy(() => import('../pages/Home'));
 const Movies = lazy(() => import('../pages/Movies'));
